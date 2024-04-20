@@ -33,9 +33,6 @@ export const searchUser = createAsyncThunk('users/searchUser', async (term, { ge
     }
 });
 
-export const sortUsers = () => ({
-    type: 'users/sortUsers',
-});
 
 const userSlice = createSlice({
     name: 'users',
