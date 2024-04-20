@@ -68,7 +68,7 @@ const userSlice = createSlice({
     },
 });
 
-export const { updateSearchHistory } = userSlice.actions;
+export const { updateSearchHistory,sortUsers } = userSlice.actions;
 
 export const selectUsers = (state) => state.users.users;
 export const selectSearchHistory = (state) => state.users.searchHistory;
