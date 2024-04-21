@@ -9,9 +9,6 @@ const getSearchHistoryFromStorage = () => {
 };
 
 // Helper function to update search history in local storage
-const updateSearchHistoryInStorage = (newSearchHistory) => {
-    localStorage.setItem('searchHistory', JSON.stringify(newSearchHistory));
-};
 
 export const getUsers = createAsyncThunk('users/getUsers', async () => {
     const response = await axios.get('https://jsonplaceholder.typicode.com/users');
